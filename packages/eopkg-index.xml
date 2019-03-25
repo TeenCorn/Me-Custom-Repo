@@ -1,0 +1,512 @@
+<PISI>
+    <Package>
+        <Name>font-freefont-ttf</Name>
+        <Summary xml:lang="en">GNU FreeFont is a free family of scalable outline fonts, suitable for general use on computers and for desktop publishing. It is Unicode-encoded for compatibility with all modern operating systems.</Summary>
+        <Description xml:lang="en">GNU FreeFont is a free family of scalable outline fonts, suitable for general use on computers and for desktop publishing. It is Unicode-encoded for compatibility with all modern operating systems.</Description>
+        <PartOf>desktop.font</PartOf>
+        <License>GPL-3.0-or-later</License>
+        <History>
+            <Update release="1">
+                <Date>2019-03-05</Date>
+                <Version>5.3.12</Version>
+                <Comment>Packaging update</Comment>
+                <Name>TeenCorn</Name>
+                <Email>TeenCorn@protonmail.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>10797540</InstalledSize>
+        <PackageSize>4781756</PackageSize>
+        <PackageHash>34176eeb7b1ccb5e0a0faf96a71da8a0d19f4d1d</PackageHash>
+        <PackageURI>font-freefont-ttf-5.3.12-1-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>font-freefont-ttf</Name>
+            <Packager>
+                <Name>TeenCorn</Name>
+                <Email>TeenCorn@protonmail.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>jack2</Name>
+        <Summary xml:lang="en">jack2 is a C++ version of the JACK low-latency audio server for multi-processor machines.</Summary>
+        <Description xml:lang="en">jack2 is a C++ version of the JACK low-latency audio server for multi-processor machines. It is a new implementation of the JACK server core features that aims in removing some limitations of the JACK1 design. The activation system has been changed for a data flow model and lock-free programming techniques for graph access have been used to have a more dynamic and robust system.</Description>
+        <PartOf>multimedia.audio</PartOf>
+        <License>GPL-2.0-or-later</License>
+        <License>LGPL-2.1-or-later</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="14">libsndfile</Dependency>
+            <Dependency releaseFrom="5">celt</Dependency>
+            <Dependency releaseFrom="17">alsa-lib</Dependency>
+            <Dependency releaseFrom="54">glibc</Dependency>
+            <Dependency releaseFrom="15">expat</Dependency>
+            <Dependency releaseFrom="44">libstdc++</Dependency>
+            <Dependency releaseFrom="44">libgcc</Dependency>
+            <Dependency releaseFrom="4">libsamplerate</Dependency>
+            <Dependency releaseFrom="7">readline</Dependency>
+            <Dependency releaseFrom="27">dbus</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="1">
+                <Date>2019-03-05</Date>
+                <Version>1.9.12</Version>
+                <Comment>Packaging update</Comment>
+                <Name>TeenCorn</Name>
+                <Email>TeenCorn@protonmail.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>2405124</InstalledSize>
+        <PackageSize>532860</PackageSize>
+        <PackageHash>ebf996de0ed35016031b40291dd40dc0dafc1673</PackageHash>
+        <PackageURI>jack2-1.9.12-1-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>jack2</Name>
+            <Packager>
+                <Name>TeenCorn</Name>
+                <Email>TeenCorn@protonmail.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>jack2-32bit</Name>
+        <Summary xml:lang="en">32-bit libraries for jack2</Summary>
+        <Description xml:lang="en">jack2 is a C++ version of the JACK low-latency audio server for multi-processor machines. It is a new implementation of the JACK server core features that aims in removing some limitations of the JACK1 design. The activation system has been changed for a data flow model and lock-free programming techniques for graph access have been used to have a more dynamic and robust system.</Description>
+        <PartOf>emul32</PartOf>
+        <License>GPL-2.0-or-later</License>
+        <License>LGPL-2.1-or-later</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="44">libgcc-32bit</Dependency>
+            <Dependency releaseFrom="27">dbus-32bit</Dependency>
+            <Dependency release="1">jack2</Dependency>
+            <Dependency releaseFrom="44">libstdc++-32bit</Dependency>
+            <Dependency releaseFrom="54">glibc-32bit</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="1">
+                <Date>2019-03-05</Date>
+                <Version>1.9.12</Version>
+                <Comment>Packaging update</Comment>
+                <Name>TeenCorn</Name>
+                <Email>TeenCorn@protonmail.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>325020</InstalledSize>
+        <PackageSize>100552</PackageSize>
+        <PackageHash>3564427b53805337bc2727e168a907b63d457c03</PackageHash>
+        <PackageURI>jack2-32bit-1.9.12-1-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>jack2</Name>
+            <Packager>
+                <Name>TeenCorn</Name>
+                <Email>TeenCorn@protonmail.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>jack2-32bit-devel</Name>
+        <Summary xml:lang="en">Development files for 32-bit jack2</Summary>
+        <Description xml:lang="en">jack2 is a C++ version of the JACK low-latency audio server for multi-processor machines. It is a new implementation of the JACK server core features that aims in removing some limitations of the JACK1 design. The activation system has been changed for a data flow model and lock-free programming techniques for graph access have been used to have a more dynamic and robust system.</Description>
+        <PartOf>programming.devel</PartOf>
+        <License>GPL-2.0-or-later</License>
+        <License>LGPL-2.1-or-later</License>
+        <RuntimeDependencies>
+            <Dependency release="1">jack2-32bit</Dependency>
+            <Dependency release="1">jack2-devel</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="1">
+                <Date>2019-03-05</Date>
+                <Version>1.9.12</Version>
+                <Comment>Packaging update</Comment>
+                <Name>TeenCorn</Name>
+                <Email>TeenCorn@protonmail.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>16</InstalledSize>
+        <PackageSize>1344</PackageSize>
+        <PackageHash>9a1cdcff92cd205390b332c2aed3def468de0e25</PackageHash>
+        <PackageURI>jack2-32bit-devel-1.9.12-1-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>jack2</Name>
+            <Packager>
+                <Name>TeenCorn</Name>
+                <Email>TeenCorn@protonmail.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>libzita-convolver</Name>
+        <Summary xml:lang="en">C++ library implementing a real-time convolution matrix.</Summary>
+        <Description xml:lang="en">Zita convolver is a C++ library implementing a real-time convolution matrix for up to 64 inputs and outputs. It uses multiple partition sizes to provide both low delay and efficient CPU use.</Description>
+        <PartOf>multimedia.library</PartOf>
+        <License>GPL-3.0-or-later</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="44">libstdc++</Dependency>
+            <Dependency releaseFrom="54">glibc</Dependency>
+            <Dependency releaseFrom="8">fftw</Dependency>
+            <Dependency releaseFrom="44">libgcc</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="1">
+                <Date>2019-03-05</Date>
+                <Version>4.0.3</Version>
+                <Comment>Packaging update</Comment>
+                <Name>TeenCorn</Name>
+                <Email>TeenCorn@protonmail.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>30722</InstalledSize>
+        <PackageSize>12598</PackageSize>
+        <PackageHash>02cbc9de3447a2a3c76a7d6e98e2811147d3ca82</PackageHash>
+        <PackageURI>libzita-convolver-4.0.3-1-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>libzita-convolver</Name>
+            <Packager>
+                <Name>TeenCorn</Name>
+                <Email>TeenCorn@protonmail.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>komorebi</Name>
+        <Summary xml:lang="en">Komorebi is an awesome animated wallpapers manager for all Linux platforms.</Summary>
+        <Description xml:lang="en">Komorebi is an awesome animated wallpapers manager for all Linux platforms.</Description>
+        <PartOf>desktop.theme</PartOf>
+        <License>GPL-3.0-or-later</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="59">libwebkit-gtk</Dependency>
+            <Dependency releaseFrom="81">libgtk-3</Dependency>
+            <Dependency releaseFrom="23">gstreamer-1.0</Dependency>
+            <Dependency releaseFrom="54">glibc</Dependency>
+            <Dependency releaseFrom="15">clutter-gtk</Dependency>
+            <Dependency releaseFrom="36">gdk-pixbuf</Dependency>
+            <Dependency releaseFrom="21">clutter</Dependency>
+            <Dependency releaseFrom="20">wayland</Dependency>
+            <Dependency releaseFrom="12">clutter-gst</Dependency>
+            <Dependency releaseFrom="11">libgee</Dependency>
+            <Dependency releaseFrom="48">glib2</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="1">
+                <Date>2019-03-05</Date>
+                <Version>2.1</Version>
+                <Comment>Packaging update</Comment>
+                <Name>TeenCorn</Name>
+                <Email>TeenCorn@protonmail.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>34144540</InstalledSize>
+        <PackageSize>32379406</PackageSize>
+        <PackageHash>dc9aa75e955679f763879016224d1a03d4e2291a</PackageHash>
+        <PackageURI>komorebi-2.1-1-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>komorebi</Name>
+            <Packager>
+                <Name>TeenCorn</Name>
+                <Email>TeenCorn@protonmail.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>a2jmidid</Name>
+        <Summary xml:lang="en">a2jmidid is an application that bridges between the system MIDI ports and JACK.</Summary>
+        <Description xml:lang="en">a2jmidid is an application that bridges between the system MIDI ports and JACK.</Description>
+        <PartOf>multimedia.audio</PartOf>
+        <License>GPL-2.0-or-later</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="17">alsa-lib</Dependency>
+            <Dependency releaseFrom="54">glibc</Dependency>
+            <Dependency releaseFrom="7">jack-audio-connection-kit</Dependency>
+            <Dependency releaseFrom="27">dbus</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="1">
+                <Date>2019-03-05</Date>
+                <Version>8</Version>
+                <Comment>Packaging update</Comment>
+                <Name>TeenCorn</Name>
+                <Email>TeenCorn@protonmail.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>94701</InstalledSize>
+        <PackageSize>26402</PackageSize>
+        <PackageHash>2278c93de3dad602d4198d1e5b2af3e51a808658</PackageHash>
+        <PackageURI>a2jmidid-8-1-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>a2jmidid</Name>
+            <Packager>
+                <Name>TeenCorn</Name>
+                <Email>TeenCorn@protonmail.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>libltc</Name>
+        <Summary xml:lang="en">libLTC provides functionality to encode and decode LTC audio from/to SMPTE or EBU timecode, including SMPTE date support.</Summary>
+        <Description xml:lang="en">libLTC provides functionality to encode and decode LTC audio from/to SMPTE or EBU timecode, including SMPTE date support. Linear (or Longitudinal) Timecode (LTC) is an encoding of SMPTE timecode data as a Manchester-Biphase encoded audio signal. The audio signal is commonly recorded on a VTR track or other storage media.</Description>
+        <PartOf>multimedia.library</PartOf>
+        <License>LGPL-3.0-or-later</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="54">glibc</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="1">
+                <Date>2019-03-05</Date>
+                <Version>1.3.0</Version>
+                <Comment>Packaging update</Comment>
+                <Name>TeenCorn</Name>
+                <Email>TeenCorn@protonmail.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>60059</InstalledSize>
+        <PackageSize>19942</PackageSize>
+        <PackageHash>8988ce68fad6111870a1326e8782873aa5c4b324</PackageHash>
+        <PackageURI>libltc-1.3.0-1-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>libltc</Name>
+            <Packager>
+                <Name>TeenCorn</Name>
+                <Email>TeenCorn@protonmail.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>libltc-devel</Name>
+        <Summary xml:lang="en">Development files for libltc</Summary>
+        <Description xml:lang="en">libLTC provides functionality to encode and decode LTC audio from/to SMPTE or EBU timecode, including SMPTE date support. Linear (or Longitudinal) Timecode (LTC) is an encoding of SMPTE timecode data as a Manchester-Biphase encoded audio signal. The audio signal is commonly recorded on a VTR track or other storage media.</Description>
+        <PartOf>programming.devel</PartOf>
+        <License>LGPL-3.0-or-later</License>
+        <RuntimeDependencies>
+            <Dependency release="1">libltc</Dependency>
+        </RuntimeDependencies>
+        <Provides>
+            <PkgConfig>ltc</PkgConfig>
+        </Provides>
+        <History>
+            <Update release="1">
+                <Date>2019-03-05</Date>
+                <Version>1.3.0</Version>
+                <Comment>Packaging update</Comment>
+                <Name>TeenCorn</Name>
+                <Email>TeenCorn@protonmail.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>31294</InstalledSize>
+        <PackageSize>11101</PackageSize>
+        <PackageHash>1d6caa4822f9f540f71b4dc8d2a371551d24272c</PackageHash>
+        <PackageURI>libltc-devel-1.3.0-1-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>libltc</Name>
+            <Packager>
+                <Name>TeenCorn</Name>
+                <Email>TeenCorn@protonmail.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>libzita-convolver-devel</Name>
+        <Summary xml:lang="en">Development files for libzita-convolver</Summary>
+        <Description xml:lang="en">Zita convolver is a C++ library implementing a real-time convolution matrix for up to 64 inputs and outputs. It uses multiple partition sizes to provide both low delay and efficient CPU use.</Description>
+        <PartOf>programming.devel</PartOf>
+        <License>GPL-3.0-or-later</License>
+        <RuntimeDependencies>
+            <Dependency release="1">libzita-convolver</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="1">
+                <Date>2019-03-05</Date>
+                <Version>4.0.3</Version>
+                <Comment>Packaging update</Comment>
+                <Name>TeenCorn</Name>
+                <Email>TeenCorn@protonmail.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>11650</InstalledSize>
+        <PackageSize>4462</PackageSize>
+        <PackageHash>dc76c5632ae975543f620e2ba80e8f8f28617de1</PackageHash>
+        <PackageURI>libzita-convolver-devel-4.0.3-1-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>libzita-convolver</Name>
+            <Packager>
+                <Name>TeenCorn</Name>
+                <Email>TeenCorn@protonmail.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>jack2-devel</Name>
+        <Summary xml:lang="en">Development files for jack2</Summary>
+        <Description xml:lang="en">jack2 is a C++ version of the JACK low-latency audio server for multi-processor machines. It is a new implementation of the JACK server core features that aims in removing some limitations of the JACK1 design. The activation system has been changed for a data flow model and lock-free programming techniques for graph access have been used to have a more dynamic and robust system.</Description>
+        <PartOf>programming.devel</PartOf>
+        <License>GPL-2.0-or-later</License>
+        <License>LGPL-2.1-or-later</License>
+        <RuntimeDependencies>
+            <Dependency release="1">jack2</Dependency>
+        </RuntimeDependencies>
+        <Provides>
+            <PkgConfig>jack</PkgConfig>
+        </Provides>
+        <History>
+            <Update release="1">
+                <Date>2019-03-05</Date>
+                <Version>1.9.12</Version>
+                <Comment>Packaging update</Comment>
+                <Name>TeenCorn</Name>
+                <Email>TeenCorn@protonmail.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>183074</InstalledSize>
+        <PackageSize>41083</PackageSize>
+        <PackageHash>4615875586fcb37b9125a1cffdf39e7226ff8f88</PackageHash>
+        <PackageURI>jack2-devel-1.9.12-1-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>jack2</Name>
+            <Packager>
+                <Name>TeenCorn</Name>
+                <Email>TeenCorn@protonmail.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>x42-plugins</Name>
+        <Summary xml:lang="en">Collection of LV2 plugins by x42-plugins.</Summary>
+        <Description xml:lang="en">Collection of LV2 plugins by x42-plugins.</Description>
+        <PartOf>multimedia.audio</PartOf>
+        <License>GPL-2.0-or-later</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="14">libsndfile</Dependency>
+            <Dependency releaseFrom="7">jack-audio-connection-kit</Dependency>
+            <Dependency releaseFrom="40">libcairo</Dependency>
+            <Dependency releaseFrom="54">glibc</Dependency>
+            <Dependency releaseFrom="21">libx11</Dependency>
+            <Dependency releaseFrom="44">libstdc++</Dependency>
+            <Dependency releaseFrom="1">libzita-convolver</Dependency>
+            <Dependency releaseFrom="1">libltc</Dependency>
+            <Dependency releaseFrom="8">fftw</Dependency>
+            <Dependency releaseFrom="44">libgcc</Dependency>
+            <Dependency releaseFrom="1">ftgl</Dependency>
+            <Dependency releaseFrom="4">libsamplerate</Dependency>
+            <Dependency releaseFrom="29">pango</Dependency>
+            <Dependency releaseFrom="48">glib2</Dependency>
+            <Dependency releaseFrom="6">libglvnd</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="1">
+                <Date>2019-03-05</Date>
+                <Version>2.0.18</Version>
+                <Comment>Packaging update</Comment>
+                <Name>TeenCorn</Name>
+                <Email>TeenCorn@protonmail.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>7066743</InstalledSize>
+        <PackageSize>1517680</PackageSize>
+        <PackageHash>1d2610442900622b5da804e1f031a124191b1686</PackageHash>
+        <PackageURI>x42-plugins-2.0.18-1-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>x42-plugins</Name>
+            <Packager>
+                <Name>TeenCorn</Name>
+                <Email>TeenCorn@protonmail.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>cadence</Name>
+        <Summary xml:lang="en">Cadence is a tool that performs system checks, manages JACK, calls other tools and makes system tweaks.</Summary>
+        <Description xml:lang="en">Cadence is a set of tools useful for audio production.</Description>
+        <PartOf>multimedia.audio</PartOf>
+        <License>GPL-2.0-only</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="44">libstdc++</Dependency>
+            <Dependency releaseFrom="54">glibc</Dependency>
+            <Dependency releaseFrom="44">libgcc</Dependency>
+            <Dependency releaseFrom="35">qt5-base</Dependency>
+            <Dependency>jack2</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="1">
+                <Date>2019-03-05</Date>
+                <Version>0.9.0</Version>
+                <Comment>Packaging update</Comment>
+                <Name>TeenCorn</Name>
+                <Email>TeenCorn@protonmail.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>4882155</InstalledSize>
+        <PackageSize>1867564</PackageSize>
+        <PackageHash>d318f27123b2a2f01f078d4ecc46b72efd593fb7</PackageHash>
+        <PackageURI>cadence-0.9.0-1-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>cadence</Name>
+            <Packager>
+                <Name>TeenCorn</Name>
+                <Email>TeenCorn@protonmail.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+</PISI>
