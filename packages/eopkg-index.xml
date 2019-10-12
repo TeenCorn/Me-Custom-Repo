@@ -39,21 +39,27 @@
         <License>GPL-2.0-or-later</License>
         <License>LGPL-2.1-or-later</License>
         <RuntimeDependencies>
-            <Dependency releaseFrom="14">libsndfile</Dependency>
+            <Dependency releaseFrom="15">libsndfile</Dependency>
             <Dependency releaseFrom="5">celt</Dependency>
-            <Dependency releaseFrom="17">alsa-lib</Dependency>
-            <Dependency releaseFrom="54">glibc</Dependency>
-            <Dependency releaseFrom="15">expat</Dependency>
-            <Dependency releaseFrom="44">libstdc++</Dependency>
-            <Dependency releaseFrom="44">libgcc</Dependency>
+            <Dependency releaseFrom="19">alsa-lib</Dependency>
+            <Dependency releaseFrom="56">glibc</Dependency>
+            <Dependency releaseFrom="16">expat</Dependency>
+            <Dependency releaseFrom="77">systemd</Dependency>
+            <Dependency releaseFrom="47">libstdc++</Dependency>
+            <Dependency releaseFrom="10">opus</Dependency>
+            <Dependency releaseFrom="47">libgcc</Dependency>
             <Dependency releaseFrom="4">libsamplerate</Dependency>
             <Dependency releaseFrom="7">readline</Dependency>
-            <Dependency releaseFrom="27">dbus</Dependency>
+            <Dependency releaseFrom="6">db5</Dependency>
+            <Dependency releaseFrom="29">dbus</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>jack-audio-connection-kit</Package>
+        </Replaces>
         <History>
             <Update release="1">
-                <Date>2019-03-05</Date>
-                <Version>1.9.12</Version>
+                <Date>2019-10-12</Date>
+                <Version>1.9.13</Version>
                 <Comment>Packaging update</Comment>
                 <Name>TeenCorn</Name>
                 <Email>TeenCorn@protonmail.com</Email>
@@ -63,10 +69,10 @@
         <Distribution>Solus</Distribution>
         <DistributionRelease>1</DistributionRelease>
         <Architecture>x86_64</Architecture>
-        <InstalledSize>2405124</InstalledSize>
-        <PackageSize>532860</PackageSize>
-        <PackageHash>ebf996de0ed35016031b40291dd40dc0dafc1673</PackageHash>
-        <PackageURI>jack2-1.9.12-1-1-x86_64.eopkg</PackageURI>
+        <InstalledSize>2535371</InstalledSize>
+        <PackageSize>558467</PackageSize>
+        <PackageHash>d5e87b058edbd51bfa133159bb96cc5ec590b0c6</PackageHash>
+        <PackageURI>jack2-1.9.13-1-1-x86_64.eopkg</PackageURI>
         <PackageFormat>1.2</PackageFormat>
         <Source>
             <Name>jack2</Name>
@@ -77,23 +83,32 @@
         </Source>
     </Package>
     <Package>
-        <Name>jack2-32bit</Name>
-        <Summary xml:lang="en">32-bit libraries for jack2</Summary>
-        <Description xml:lang="en">jack2 is a C++ version of the JACK low-latency audio server for multi-processor machines. It is a new implementation of the JACK server core features that aims in removing some limitations of the JACK1 design. The activation system has been changed for a data flow model and lock-free programming techniques for graph access have been used to have a more dynamic and robust system.</Description>
-        <PartOf>emul32</PartOf>
+        <Name>x42-plugins</Name>
+        <Summary xml:lang="en">Collection of LV2 plugins by x42-plugins.</Summary>
+        <Description xml:lang="en">Collection of LV2 plugins by x42-plugins.</Description>
+        <PartOf>multimedia.audio</PartOf>
         <License>GPL-2.0-or-later</License>
-        <License>LGPL-2.1-or-later</License>
         <RuntimeDependencies>
-            <Dependency releaseFrom="44">libgcc-32bit</Dependency>
-            <Dependency releaseFrom="27">dbus-32bit</Dependency>
-            <Dependency release="1">jack2</Dependency>
-            <Dependency releaseFrom="44">libstdc++-32bit</Dependency>
-            <Dependency releaseFrom="54">glibc-32bit</Dependency>
+            <Dependency releaseFrom="14">libsndfile</Dependency>
+            <Dependency releaseFrom="7">jack-audio-connection-kit</Dependency>
+            <Dependency releaseFrom="40">libcairo</Dependency>
+            <Dependency releaseFrom="54">glibc</Dependency>
+            <Dependency releaseFrom="21">libx11</Dependency>
+            <Dependency releaseFrom="44">libstdc++</Dependency>
+            <Dependency releaseFrom="1">libzita-convolver</Dependency>
+            <Dependency releaseFrom="1">libltc</Dependency>
+            <Dependency releaseFrom="8">fftw</Dependency>
+            <Dependency releaseFrom="44">libgcc</Dependency>
+            <Dependency releaseFrom="1">ftgl</Dependency>
+            <Dependency releaseFrom="4">libsamplerate</Dependency>
+            <Dependency releaseFrom="29">pango</Dependency>
+            <Dependency releaseFrom="48">glib2</Dependency>
+            <Dependency releaseFrom="6">libglvnd</Dependency>
         </RuntimeDependencies>
         <History>
             <Update release="1">
                 <Date>2019-03-05</Date>
-                <Version>1.9.12</Version>
+                <Version>2.0.18</Version>
                 <Comment>Packaging update</Comment>
                 <Name>TeenCorn</Name>
                 <Email>TeenCorn@protonmail.com</Email>
@@ -103,50 +118,13 @@
         <Distribution>Solus</Distribution>
         <DistributionRelease>1</DistributionRelease>
         <Architecture>x86_64</Architecture>
-        <InstalledSize>325020</InstalledSize>
-        <PackageSize>100552</PackageSize>
-        <PackageHash>3564427b53805337bc2727e168a907b63d457c03</PackageHash>
-        <PackageURI>jack2-32bit-1.9.12-1-1-x86_64.eopkg</PackageURI>
+        <InstalledSize>7066743</InstalledSize>
+        <PackageSize>1517680</PackageSize>
+        <PackageHash>1d2610442900622b5da804e1f031a124191b1686</PackageHash>
+        <PackageURI>x42-plugins-2.0.18-1-1-x86_64.eopkg</PackageURI>
         <PackageFormat>1.2</PackageFormat>
         <Source>
-            <Name>jack2</Name>
-            <Packager>
-                <Name>TeenCorn</Name>
-                <Email>TeenCorn@protonmail.com</Email>
-            </Packager>
-        </Source>
-    </Package>
-    <Package>
-        <Name>jack2-32bit-devel</Name>
-        <Summary xml:lang="en">Development files for 32-bit jack2</Summary>
-        <Description xml:lang="en">jack2 is a C++ version of the JACK low-latency audio server for multi-processor machines. It is a new implementation of the JACK server core features that aims in removing some limitations of the JACK1 design. The activation system has been changed for a data flow model and lock-free programming techniques for graph access have been used to have a more dynamic and robust system.</Description>
-        <PartOf>programming.devel</PartOf>
-        <License>GPL-2.0-or-later</License>
-        <License>LGPL-2.1-or-later</License>
-        <RuntimeDependencies>
-            <Dependency release="1">jack2-32bit</Dependency>
-            <Dependency release="1">jack2-devel</Dependency>
-        </RuntimeDependencies>
-        <History>
-            <Update release="1">
-                <Date>2019-03-05</Date>
-                <Version>1.9.12</Version>
-                <Comment>Packaging update</Comment>
-                <Name>TeenCorn</Name>
-                <Email>TeenCorn@protonmail.com</Email>
-            </Update>
-        </History>
-        <BuildHost>solus</BuildHost>
-        <Distribution>Solus</Distribution>
-        <DistributionRelease>1</DistributionRelease>
-        <Architecture>x86_64</Architecture>
-        <InstalledSize>16</InstalledSize>
-        <PackageSize>1344</PackageSize>
-        <PackageHash>9a1cdcff92cd205390b332c2aed3def468de0e25</PackageHash>
-        <PackageURI>jack2-32bit-devel-1.9.12-1-1-x86_64.eopkg</PackageURI>
-        <PackageFormat>1.2</PackageFormat>
-        <Source>
-            <Name>jack2</Name>
+            <Name>x42-plugins</Name>
             <Packager>
                 <Name>TeenCorn</Name>
                 <Email>TeenCorn@protonmail.com</Email>
@@ -397,8 +375,8 @@
         </Provides>
         <History>
             <Update release="1">
-                <Date>2019-03-05</Date>
-                <Version>1.9.12</Version>
+                <Date>2019-10-12</Date>
+                <Version>1.9.13</Version>
                 <Comment>Packaging update</Comment>
                 <Name>TeenCorn</Name>
                 <Email>TeenCorn@protonmail.com</Email>
@@ -408,62 +386,13 @@
         <Distribution>Solus</Distribution>
         <DistributionRelease>1</DistributionRelease>
         <Architecture>x86_64</Architecture>
-        <InstalledSize>183074</InstalledSize>
-        <PackageSize>41083</PackageSize>
-        <PackageHash>4615875586fcb37b9125a1cffdf39e7226ff8f88</PackageHash>
-        <PackageURI>jack2-devel-1.9.12-1-1-x86_64.eopkg</PackageURI>
+        <InstalledSize>187939</InstalledSize>
+        <PackageSize>42648</PackageSize>
+        <PackageHash>10b7139ef005d849f5e81886ae6d1bb6e908d323</PackageHash>
+        <PackageURI>jack2-devel-1.9.13-1-1-x86_64.eopkg</PackageURI>
         <PackageFormat>1.2</PackageFormat>
         <Source>
             <Name>jack2</Name>
-            <Packager>
-                <Name>TeenCorn</Name>
-                <Email>TeenCorn@protonmail.com</Email>
-            </Packager>
-        </Source>
-    </Package>
-    <Package>
-        <Name>x42-plugins</Name>
-        <Summary xml:lang="en">Collection of LV2 plugins by x42-plugins.</Summary>
-        <Description xml:lang="en">Collection of LV2 plugins by x42-plugins.</Description>
-        <PartOf>multimedia.audio</PartOf>
-        <License>GPL-2.0-or-later</License>
-        <RuntimeDependencies>
-            <Dependency releaseFrom="14">libsndfile</Dependency>
-            <Dependency releaseFrom="7">jack-audio-connection-kit</Dependency>
-            <Dependency releaseFrom="40">libcairo</Dependency>
-            <Dependency releaseFrom="54">glibc</Dependency>
-            <Dependency releaseFrom="21">libx11</Dependency>
-            <Dependency releaseFrom="44">libstdc++</Dependency>
-            <Dependency releaseFrom="1">libzita-convolver</Dependency>
-            <Dependency releaseFrom="1">libltc</Dependency>
-            <Dependency releaseFrom="8">fftw</Dependency>
-            <Dependency releaseFrom="44">libgcc</Dependency>
-            <Dependency releaseFrom="1">ftgl</Dependency>
-            <Dependency releaseFrom="4">libsamplerate</Dependency>
-            <Dependency releaseFrom="29">pango</Dependency>
-            <Dependency releaseFrom="48">glib2</Dependency>
-            <Dependency releaseFrom="6">libglvnd</Dependency>
-        </RuntimeDependencies>
-        <History>
-            <Update release="1">
-                <Date>2019-03-05</Date>
-                <Version>2.0.18</Version>
-                <Comment>Packaging update</Comment>
-                <Name>TeenCorn</Name>
-                <Email>TeenCorn@protonmail.com</Email>
-            </Update>
-        </History>
-        <BuildHost>solus</BuildHost>
-        <Distribution>Solus</Distribution>
-        <DistributionRelease>1</DistributionRelease>
-        <Architecture>x86_64</Architecture>
-        <InstalledSize>7066743</InstalledSize>
-        <PackageSize>1517680</PackageSize>
-        <PackageHash>1d2610442900622b5da804e1f031a124191b1686</PackageHash>
-        <PackageURI>x42-plugins-2.0.18-1-1-x86_64.eopkg</PackageURI>
-        <PackageFormat>1.2</PackageFormat>
-        <Source>
-            <Name>x42-plugins</Name>
             <Packager>
                 <Name>TeenCorn</Name>
                 <Email>TeenCorn@protonmail.com</Email>
